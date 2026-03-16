@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout title="Contact">
+  <section class="card">
+    <h1>Contact Me</h1>
+    <p class="small">
+      Have a question, want to book a session, or request a community visit? Send me a message below or email me directly.
+    </p>
+
+    <!-- Replace the action URL with your Formspree or other form handler -->
+    <form action="https://formspree.io/f/myknnpnd" method="POST">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input id="name" name="name" required />
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Send message</button>
+    </form>
+
+
+    <h3 style="margin-top:1rem">Pay-What-You-Can / Donations</h3>
+    <p class="small">
+      I keep my sessions low-cost and offer pay-what-you-can options. If you'd like to contribute to help me keep offering accessible training, add a note in your message.
+    </p>
+  </section>
+</Layout>
