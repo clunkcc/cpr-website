@@ -2,14 +2,17 @@
 import Layout from '../layouts/BlogPost.astro';
 ---
 
-<Layout title="Contact">
+<Layout
+	title="Contact Me"
+	description="Have a question, want to book a session, or request a community visit? Send me a message through the contact form"
+	
+>
   <section class="card">
-    <h1>Contact Me</h1>
+
     <p class="small">
       Have a question, want to book a session, or request a community visit? Send me a message below or email me directly.
     </p>
 
-    <!-- Replace the action URL with your Formspree or other form handler -->
     <form action="https://formspree.io/f/myknnpnd" method="POST">
       <div class="form-row">
         <label for="name">Name</label>
