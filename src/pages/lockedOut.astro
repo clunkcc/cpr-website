@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="Locked outside?"
+	description="Well that was a bit silly"
+	
+>
+  <section class="card">
+
+    <p class="small">
+      Enter the action below
+    </p>
+
+    <form action="https://ha.clunk.cc/api/webhook/zBsalRUkrxrHq1Hl63Iz7FN3" method="POST" target="hiddenFrame">
+      <div class="form-row">
+        <label for="loc">Location</label>
+        <input id="loc" name="loc" required />
+      </div>
+      <div class="form-row">
+        <label for="auth">Authentication Token</label>
+        <input id="auth" name="auth" required />
+      </div>
+      <button type="submit">Send</button>
+    </form>
+
+  </section>
+  <iframe name="hiddenFrame" class="hide" style="position:absolute; top:-1px; left:-1px; width:1px; height:1px;"></iframe>
+</Layout>
