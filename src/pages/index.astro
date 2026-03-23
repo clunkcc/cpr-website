@@ -9,26 +9,41 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<script is:inline>
+			function checkPassword() {
+				var password = "mypassword"; // Set your password here
+				
+				var protectedContent = document.getElementById("protectedContent");
+				var userInput = prompt("Please enter the password to access this site:");
+				if (!protectedContent) return;
+				while (userInput !== password) {
+					userInput = prompt("Incorrect password. Please try again:");
+				}
+				protectedContent.style.display = "block";
+			}
+
+			window.addEventListener("DOMContentLoaded", checkPassword);
+		</script>
 	</head>
-	<body>
+	<body id="protectedContent" style="display:none;">
 		<Header />
 		<main>
 			<h1>👋 Hello! Welcome to Cassie's Practice Resuscitation Training!</h1>
 			<p>
-				Low-cost, pay-what-you-can CPR and first aid training for community. Practical skills, queer trainer, and accessible sessions so more people can act confidently in an emergency.
+				Nationally recognised, low-cost, pay-what-you-can CPR and first aid training for community. Practical skills, queer trainer, and accessible sessions so more people can act with confidence in an emergency.
 			</p>
 
 			<div class="grid">
 				<div class="card">
-					<h2>Whats On Offer:</h2>
+					<h2>What's On Offer:</h2>
 					<ul>
-					<li>Hands-on CPR (adult, child, infant) — short practical sessions</li>
-					<li>Basic first aid — wound care, burns, choking</li>
+					<li>Provide Cardiopulmonary Resuscitation (HLTAID009) — short practical sessions</li>
+					<li>Provide First Aid (HLTAID011) — wound care, burns, choking</li>
 					<li>A range of training options — from assessment-only refresher sessions to full, in-depth preparation before assessment</li>
 					<li>Community sessions tailored for clubs and groups</li>
 					</ul>
 					<p class="small">
-					We run refundable low-cost sessions and a pay-what-you-can model so cost isn’t a barrier.
+					We run affordable low-cost sessions under a pay-what-you-can model so cost isn’t a barrier.
 					</p>
 				</div>
 				<div class="card">
@@ -37,6 +52,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					<li>Send me a message through the <a href="/contact">contact form</a></li>
 					<li>I'll put you on the waitlist for the next available session</li>
 					<li>If you have a large group, I'll work with you to organise a session that meets your group's needs</li>
+					<li>After you complete training, successful participants receive a nationally recognised Statement of Attainment issued by our training partner, Business Wise First Aid Training (RTO 45193). </li>
 					</ol>
 				</div>
 			</div>
