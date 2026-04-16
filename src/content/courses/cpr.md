@@ -28,7 +28,7 @@ You will also be required to provide your government name, date of birth, and ge
 
 This information will not be shared or used for any purpose other than to issue your Statement of Attainment on successful completion of the course.
 
-You can also provide your preferred name with will be used during the course.
+You can also provide your preferred name which will be used during the course.
 
 
 <h2> Location and types of Training </h2>
@@ -56,8 +56,7 @@ If student is under 18 years old at the time of training a [Parent / Guardian Co
 
 <h2>Statement of Attainment</h2>
 
-
-On successful completion of the course and verification of your USI Number, a nationally-recognised Statement of Attainment will be issued from my training partner – Business Wise First Aid Training (RTO 45193), showing you have fulfilled the requirements of HLTAID009 Provide cardiopulmonary resuscitation.
+On successful completion of the course and verification of your USI Number, you will receive a PDF by email with a nationally-recognised Statement of Attainment attached, showing you have fulfilled the requirements of HLTAID009 Provide cardiopulmonary resuscitation.
 
 <h2>Course cost</h2>
 
